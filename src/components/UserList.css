@@ -1,0 +1,63 @@
+.user-list-container {
+    padding: 20px;
+  }
+  
+  .user-list-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-link {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-list-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .user-list-table th,
+  .user-list-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
