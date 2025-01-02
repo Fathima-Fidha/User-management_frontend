@@ -21,7 +21,7 @@ const Navbar = () => {
           Dashboard
         </Link>
         <Link to="/user-list" className="navbar-link">
-          User List
+          Userlist
         </Link>
         <Link to="/signup" className="navbar-link">
           Signup
