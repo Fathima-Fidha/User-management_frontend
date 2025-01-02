@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'; // Import the CSS file
-import { useDispatch } from 'react-redux';
 
 
 const Navbar = () => {
-  const dispatch=useDispatch();
+ 
   const navigate=useNavigate();
-
   const handleLogout=()=>{
   
     localStorage.removeItem('token');
@@ -23,13 +21,6 @@ const Navbar = () => {
         <Link to="/user-list" className="navbar-link">
           Userlist
         </Link>
-        <Link to="/signup" className="navbar-link">
-          Signup
-        </Link>
-        <Link to="/" className="navbar-link">
-          Login
-        </Link>
-
         <Link to="/" className="navbar-link">
          < button className='logout' onClick={handleLogout}>Logout</button>
         </Link>

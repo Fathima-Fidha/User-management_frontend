@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../src/axios';
 import './SignupPage.css'; // Import the scoped CSS file
+import { Link } from 'react-router-dom'; // Import Link for routing
 
 const SignupPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -51,6 +52,9 @@ const SignupPage = () => {
         </div>
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="submit-button">Signup</button>
+        <p className="login-prompt">
+        Already have an account? <Link to="/" className="login-link">Login</Link>
+      </p>
       </form>
     </div>
   );

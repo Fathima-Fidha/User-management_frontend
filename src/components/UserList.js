@@ -29,6 +29,8 @@ const UserList = () => {
       .then((data) => {
         console.log(data.message);
         alert(data.message);
+        // Remove the deleted user from the state without refreshing the page
+        setUsers(users.filter((user) => user._id !== id));
       })
       .catch((error) => {
         console.error('Error deleting user:', error.message);

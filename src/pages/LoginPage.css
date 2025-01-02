@@ -79,3 +79,22 @@
     font-size: 14px;
   }
 }
+
+/* Styling for the signup prompt */
+.signup-prompt {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for the signup link */
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

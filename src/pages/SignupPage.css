@@ -77,6 +77,24 @@
     background-color: #0056b3;
   }
   
+/* Styling for the signup prompt */
+.login-prompt {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for the signup link */
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
 
   
   

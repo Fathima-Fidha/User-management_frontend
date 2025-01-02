@@ -4,7 +4,7 @@ import { authStart, authSuccess, authFailure } from '../redux/slices/authSlice';
 import api from '../../src/axios';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css'; // Import the CSS file
-
+import { Link } from 'react-router-dom'; // Import Link for routing
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -17,7 +17,7 @@ const LoginPage = () => {
     dispatch(authStart());
     try {
       const res = await api.post('/api/auth', formData);
-      localStorage.setItem('token',res.data.token)
+      localStorage.setItem('token', res.data.token);
       dispatch(authSuccess(res.data));
       navigate('/dashboard');
     } catch (err) {
@@ -50,7 +50,11 @@ const LoginPage = () => {
         </div>
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="submit-button">Login</button>
+        <p className="signup-prompt">
+        Don't have an account? <Link to="/signup" className="signup-link">Sign up</Link>
+      </p>
       </form>
+      
     </div>
   );
 };
